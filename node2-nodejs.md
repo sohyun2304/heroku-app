@@ -37,3 +37,8 @@ vi app.js
 ```
 npm start 
 ```
+
+## 웹 브라우저에서 접속
+```
+http://localhost:28080
+```
