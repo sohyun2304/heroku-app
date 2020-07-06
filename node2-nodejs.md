@@ -1,7 +1,7 @@
 ## nodejs 설치
 ```
-yum install -y epel-release
-yum install -y nodejs
+sudo yum install -y epel-release
+sudo yum install -y nodejs
 ```
 
 ## 작업 디렉토리 생성
