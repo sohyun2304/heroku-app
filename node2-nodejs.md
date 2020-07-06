@@ -21,6 +21,10 @@ npm install express --save
 vi package.json
 ```
 ```
+"scripts": { 밑에 아래 내용 추가
+    "start": "node app.js",
+```
+```
 VI editor 사용법:
 Command 모드 <-> Insert 모드
 Command 모드 -> Insert 모드 : a, i, o 키를 이용
