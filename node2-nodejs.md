@@ -20,8 +20,20 @@ npm install express --save
 ```
 vi package.json
 ```
+```
+VI editor 사용법:
+Command 모드 <-> Insert 모드
+Command 모드 -> Insert 모드 : a, i, o 키를 이용
+Insert 모드 -> Command 모드 : ESC 키 이용
+저장 : Command 모드에서 :wq! 입력 
+```
 
 ## app.js 파일 생성
 ```
 vi app.js
+```
+
+## 서버 실행
+```
+npm start 
 ```
