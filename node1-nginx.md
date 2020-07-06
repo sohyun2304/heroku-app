@@ -1,4 +1,7 @@
-## /etc/yum.repos.d/nginx.repo 파일 생성
+## /etc/yum.repos.d/nginx.repo 파일 생성 
+```
+sudo vi /etc/yum.repos.d/nginx.repo
+```
 ```
 [nginx] 
 name=nginx repo
@@ -12,18 +15,18 @@ enabled=1
 sudo yum install -y nginx
 ```
 
-## 방화벽 추가
+## 방화벽 실행, 포트 추가
 ```
-systemctl enable firewalld
-systemctl start firewalld
-firewall-cmd --permanent --zone=public --add-port=8080/tcp
-firewall-cmd --reload
-firewall-cmd --list-ports
+sudo systemctl enable firewalld
+sudo systemctl start firewalld
+sudo firewall-cmd --permanent --zone=public --add-port=8080/tcp
+sudo firewall-cmd --reload
+sudo firewall-cmd --list-ports
 ```
 
 ## PORT 변경
 ```
-vi /etc/nginx/conf.d/default.conf (포트 변경)
-systemctl start nginx
-systemctl enable nginx
+sudo vi /etc/nginx/conf.d/default.conf (포트 변경)
+sudo systemctl start nginx
+sudo systemctl enable nginx
 ```
