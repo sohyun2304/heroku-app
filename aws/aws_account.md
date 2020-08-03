@@ -1,14 +1,14 @@
 ** AWS Account
 *** EDU1 ~ EDU8 
-https://574332806849.signin.aws.amazon.com/console
-강민서  edu1_us_east_1
-강한별  edu2_us_east_1
-권재희  edu3_us_east_1
-김석주  edu4_us_west_2
-김승준  edu5_us_west_2
-김해인  edu6_us_west_2
-박나형  edu7_ap_northeast_2
-박정훈  edu8_ap_northeast_2
+- https://574332806849.signin.aws.amazon.com/console
+- 강민서  edu1_us_east_1
+- 강한별  edu2_us_east_1
+- 권재희  edu3_us_east_1
+- 김석주  edu4_us_west_2
+- 김승준  edu5_us_west_2
+- 김해인  edu6_us_west_2
+- 박나형  edu7_ap_northeast_2
+- 박정훈  edu8_ap_northeast_2
 
 *** EDU9 ~ EDU16
 https://edowon0623.signin.aws.amazon.com/console
