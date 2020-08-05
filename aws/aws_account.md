@@ -27,6 +27,7 @@
 - 전인창  edu18_us_east_1
 - 정원재  edu19_us_east_1
 - 정진우  edu20_us_west_2
+
 - 조유빈  edu21_us_west_2
 - 최윤영  edu22_us_west_2
 - 홍유진  edu23_ap_northeast_2
