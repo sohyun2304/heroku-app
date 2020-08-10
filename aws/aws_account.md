@@ -25,5 +25,5 @@
 - https://440263241313.signin.aws.amazon.com/console
 - 조성민  edu17_us_east_1
 - 차의성  edu18_us_east_1
-- 최보원  edu19_us_west_2
+- 최보원  edu19_us_east_1
 - 최재호  edu20_us_west_2
