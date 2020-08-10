@@ -21,7 +21,7 @@
 - 정종우  edu15_ap_northeast_2
 - 조병준  edu16_ap_northeast_2
 
-### EDU17 ~ EDU24
+### EDU17 ~ EDU20
 - https://440263241313.signin.aws.amazon.com/console
 - 조성민  edu17_us_east_1
 - 차의성  edu18_us_east_1
