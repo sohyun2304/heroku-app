@@ -1,9 +1,9 @@
 const mysql      = require('mysql');
 const connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : 'test1357',
-  database : 'my_db'
+  host     : 'edu24-edowon-database.c16ysptp6e8x.ap-northeast-2.rds.amazonaws.com',
+  user     : 'admin',
+  password : 'test1234',
+  database : 'mydb'
 });
 connection.connect();
 connection.query('SELECT * from Users', (error, rows, fields) => {
