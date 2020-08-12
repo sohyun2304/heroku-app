@@ -2,10 +2,10 @@ const express    = require('express');
 const mysql      = require('mysql');
 //const dbconfig   = require('./config/database.js');
 const connection = mysql.createConnection({
-  host     : 'edu24-edowon-database.c16ysptp6e8x.ap-northeast-2.rds.amazonaws.com',
-  user     : 'admin',
-  password : 'test1234',
-  database : 'mydb'
+  host     : '[rds host]',
+  user     : '[rds user]',
+  password : '[rds password]',
+  database : '[rds database]'
 });
 //const connection = mysql.createConnection(dbconfig);
 
