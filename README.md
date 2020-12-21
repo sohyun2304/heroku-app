@@ -6,7 +6,7 @@
 - Notepad++ (https://notepad-plus-plus.org/downloads/v7.8.2/)
 - Postman (https://www.getpostman.com/downloads/) <-회원 가입 필요
 - Nodejs (https://nodejs.org/ko/)
-- Xshell
+- Xshell (https://www.netsarang.com/ko/free-for-home-school/)
 
 1. Cloud Computing (Optional)
 - AWS login 확인
