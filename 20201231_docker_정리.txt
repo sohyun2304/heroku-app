@@ -1,0 +1,72 @@
+## Dockerfile 생성 (Nodejs 예제)
+1. Local에서 테스트 
+    Quest) Nodejs 배포 
+    1-1. Local 환경에 Nodejs 설치 (O)
+    1-2. package.json 파일 생성 (O)
+    1-3. index.js 파일 생성 (O)
+    1-4. npm install
+    1-5. npm start
+2. Dockerfile 작성
+3. Docker image 생성
+4. Docker container 생성 (with 이미지)
+
+## Dockerfile 생성 (Java Spring Boot 예제)
+1. Local에서 테스트 
+    Quest) Java Spring boot App 배포 
+    1-1. Local 환경에 JDK 설치 (O)
+    1-2. java -Dserver.port=8080 -jar apidemo-0.3.jar
+    1-3. Windows 환경
+        - (웹브라우저) http://127.0.0.1:8080/h2-console 
+        - (웹브라우저) http://127.0.0.1:8080/api/blogs 
+    1-4. Linux 환경
+        - (웹브라우저) http://127.0.0.1:18080/h2-console 
+        - (웹브라우저) http://127.0.0.1:18080/api/blogs 
+    1-5. API
+        - HTTP GET Method : /api/blogs -> 블로그 목록 보기
+            - curl  -X GET http://localhost:18080/api/blogs
+        - HTTP POST Method : /api/blogs -> 블로그 작성
+            - CURL 명령어 
+            - curl  -d '{"title":"Docker2"}' 
+                    -H "Content-Type: application/json" 
+                    -X POST http://localhost:18080/api/blogs
+(~5시까지, edowon0623@gmail.com 메일로 Dockerfile 제출 )
+2. Dockerfile 작성 
+    2-1. FROM
+    2-2. (JDK 설치)
+    2-3. Host에 있는 apidemo-0.3.jar 파일을 Docker image로 복사 
+            - ADD, COPY
+    2-4. java -jar apidemo-0.3.jar --server.port=8080 실행 
+3. Docker image 생성
+    3-1. ex) docker build -t apidemo:0.3 .
+4. Docker container 생성 (with 이미지)
+    4-1. ex) docker run -d -p 8080:8080 apidemo:0.3
+5. 테스트   
+    - 컨테이너로 배포된 자바 애플리케이션 테스트
+
+6. edowon0623@gmail.com 메일로 본인의 repositroy 주소를 보내주세요. 
+    ex) edowon0623/apidemo:0.3
+
+
+** Docker container 
+1. Docker 설치 
+    - Docker Engine (Linux)
+    - Docker Desktop for Windows (Windows)
+2. Docker image 
+    - docker image ls (= docker images)
+    - docker image pull (= docker pull)
+    - docker image push (= docker push)
+    - docker image rm (= docker rmi)
+    - docker image build, tag 
+3. Docker container 
+    - docker container ls (= docker ps) 
+        -> 현재 running 상태의 컨테이너만 표시 
+        -> -a 추가하면 (running + exited + created ... )
+    - docker container create, start, stop
+    - docker container run
+        - -d, -p, -e, --name, -it  
+    - docker container rm 
+4. Dockerfile 생성 
+    - FROM, ADD, CMD, ENTRYPOINT, ENV, ARG
+5. Docker 이미지 공개 (업로드)
+    - Public regitry ex) https://hub.docker.com, Google Cloud Platform
+    - Private registry ex) docker registry 
