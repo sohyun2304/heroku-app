@@ -1,2 +1,2 @@
 # heroku-app
-print("SWEET POTATO'S WORLD")
+SWEET POTATO'S WORLD
